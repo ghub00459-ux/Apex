@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Mea Foto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Galeria Mea Foto</h1>
+        
+        <!-- Zona de Upload -->
+        <div class="upload-section">
+            <label for="imageInput" class="custom-upload-btn">Alege o poză</label>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <!-- Grila de poze -->
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+
+    <!-- Fereastra Pop-up (Modal) pentru poza mare -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="fullImage">
+        <button id="deleteBtn" class="delete-btn">Șterge Poza</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
